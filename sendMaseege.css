@@ -54,8 +54,8 @@
 	padding: 40px 70px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 #massege .top .main p{
 	font-size: 2.4em;
